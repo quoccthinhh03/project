@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đăng kí</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript">
+            function Form()
+                {
+                   
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+                 
+                    if (username == ''){
+                        alert(' Nhập tên đăng nhập');
+                    }
+                    else if (password == '')
+                    {
+                        alert('Nhập mật khẩu');
+                    }
+                    else{
+                        alert('YOU HAVE SUCCESSFULLY REGISTERED ! OK ! PLEASE LOG IN 🧡 ');
+                        return true;
+                    }
+                 
+                    return false;
+                }
+        </script>
+    </head>
+    <body>
+        <form method="post" action="" onsubmit="return Form()">
+            Username: <input type="text" name="username" id="username" /> <br/><br/>
+            Password: <input type="password" name="password" id="password" /> <br/><br/>
+            <input type="submit" name="login" value="Register"/>
+        </form>
+    </body>
+</html>
